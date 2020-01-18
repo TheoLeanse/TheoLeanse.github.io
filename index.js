@@ -4,7 +4,7 @@ document.body.appendChild(renderer.domElement);
 const scene = getScene();
 const camera = getCamera();
 const loader = new THREE.OBJLoader();
-var controls = new THREE.OrbitControls( camera );
+var controls = new THREE.OrbitControls( camera, renderer.domElement);
 let face;
 loader.load(
 	'my-face.obj',
